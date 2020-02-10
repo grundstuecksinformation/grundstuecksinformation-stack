@@ -15,7 +15,6 @@ services:
         reservations:
           cpus: '1'
           memory: 512M
-
   proxy:
     image: sogis/grundstuecksinformation-proxy:latest
     restart: always
