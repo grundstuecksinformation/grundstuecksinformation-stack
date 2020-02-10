@@ -1,0 +1,9 @@
+version: '3'
+services:
+  client:
+    image: sogis/grundstuecksinformation-client:latest
+    environment:
+      SERVER_PORT: 8080
+    ports:
+      - "8181:8080"
+    restart: always    
