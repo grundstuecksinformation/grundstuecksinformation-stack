@@ -1,5 +1,10 @@
 version: '3'
 services:
+  db:
+    hostname: primary
+    volumes:
+       - ~/pgdata-grundstuecksinformation:/pgdata:delegated
+    restart: always
   client:
     image: sogis/grundstuecksinformation-client:latest
     environment:
