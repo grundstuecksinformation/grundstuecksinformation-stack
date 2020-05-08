@@ -74,10 +74,10 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1'
+          cpus: '0.5'
           memory: 1024M
         reservations:
-          cpus: '1'
+          cpus: '0.5'
           memory: 512M
   proxy:
     image: sogis/grundstuecksinformation-proxy:latest
